@@ -1,0 +1,118 @@
+﻿<Window x:Class="MusicPlayer.AddPlaylist"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:MusicPlayer" 
+        xmlns:vm="clr-namespace:MusicPlayer.ViewModel"
+        xmlns:uc="clr-namespace:MusicPlayer.UserControls"
+        mc:Ignorable="d"
+        Height="370" 
+        Width="530"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="Transparent"
+        x:Name="AddPlaylistWindow"
+        Icon="\Resource\Images\icon.ico">
+    <Window.DataContext>
+        <vm:UploadVM/>
+    </Window.DataContext>
+    <Grid Margin="20">
+        <Grid.Effect>
+            <DropShadowEffect BlurRadius="20" Direction="-90" RenderingBias="Quality" ShadowDepth="1"/>
+        </Grid.Effect>
+        <Border CornerRadius="40" Background="{StaticResource SecondaryDark}"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition ></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <uc:ControlBar/>
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"></RowDefinition>
+                        <RowDefinition Height="80"></RowDefinition>
+                        <RowDefinition Height="80"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock 
+                        x:Name="txtTitle"
+                        Text="TẠO PLAYLIST MỚI"
+                        FontSize="23"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        FontWeight="Bold"
+                        Foreground="{StaticResource SecondaryLight}"
+                        Margin="0,10,0,0"
+                        Height="28" Width="250"/>
+                    <TextBlock 
+                        Grid.Row="1"
+                        Text="Tên Playlist"
+                        Foreground="{StaticResource PrimaryMid}"
+                        FontWeight="Bold"
+                        FontSize="18"
+                        Margin="40,0,0,0"/>
+                    <TextBox 
+                        x:Name="tbPlaylistName"
+                        Grid.Row="1"
+                        materialDesign:HintAssist.Hint="Nhập tên ở đây"
+                        Foreground="{StaticResource SecondaryLight}"
+                        FontSize="17"
+                        Margin="40,30,40,15"
+                        BorderBrush="{StaticResource SecondaryLight}"/>
+
+                    <Grid
+                        Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="36*"/>
+                            <ColumnDefinition Width="89*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button
+                            x:Name="btnAdd"
+                            Style="{StaticResource MaterialDesignRaisedLightButton}"
+                            Height="40"
+                            Width="120"
+                            Background="{StaticResource PrimaryLight}"
+                            materialDesign:ButtonAssist.CornerRadius="8"
+                            BorderBrush="Transparent"
+                            Margin="41,30,185,10"
+                            Click="btnAdd_Click" Grid.Column="1">
+                            <TextBlock 
+                                x:Name="txtBtn"
+                                Text="TẠO" 
+                                FontSize="18" 
+                                Height="23" 
+                                FontWeight="Medium" 
+                                VerticalAlignment="Top"
+                                HorizontalAlignment="Center"
+                                Foreground="{StaticResource PrimaryDark}">
+                            </TextBlock>
+                        </Button>
+                    </Grid>
+                    <Button
+                        x:Name="btnExit"
+                        Grid.Row="2"
+                        BorderThickness="2"
+                        Height="40"
+                        Width="120"
+                        BorderBrush="{StaticResource PrimaryLight}"
+                        Style="{StaticResource MaterialDesignOutlinedSecondaryDarkButton}"
+                        Content="THOÁT"
+                        Foreground="{StaticResource PrimaryLight}"
+                        FontSize="18"
+                        FontWeight="Medium"
+                        materialDesign:ButtonAssist.CornerRadius="8"
+                        Command="{Binding CloseUploadSongCommand}"
+                        CommandParameter="{Binding ElementName=AddPlaylistWindow}"
+                        Margin="185,80,185,-40"/>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
