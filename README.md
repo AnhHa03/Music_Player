@@ -98,13 +98,13 @@
 ## Thành viên thực hiện
 | STT | MSSV     | Họ và tên                                                  | Lớp      | 
 | --- | -------- | ---------------------------------------------------------- | -------- | 
-| 1   | 21520082 | [Lê Bảo Như](https://github.com/nhubaole)          | KTPM2021 | 
-| 2   | 21522423 | [Huỳnh Ngọc Ý Nhi](https://github.com/Nhongnhong-0101)             | KTPM2021 | 
-| 3   | 21520003 | [Hà Mai Anh](https://github.com/AnhHa03) | KTPM2021 | 
+| 1   | 22521555 | [Huỳnh Trung]          | KTPM2022 | 
+| 2   | 22521590 | [Nguyễn Anh Tú]             | KTPM2022 | 
+| 3   | 21520003 | [Hà Mai Anh] | KTPM2021 | 
 *	Sinh viên khoa Công nghệ Phần mềm, trường Đại học Công nghệ Thông tin, Đại học Quốc gia thành phố Hồ Chí Minh.
 
 ## Giảng viên hướng dẫn
-* Thầy **Đinh Nguyễn Anh Dũng**, giảng viên khoa **Công Nghệ Phần Mềm**, trường Đại học Công nghệ Thông tin, Đại học Quốc gia Thành phố Hồ Chí Minh.
+* Thầy **Huỳnh Tuấn Anh**, giảng viên khoa **Công Nghệ Phần Mềm**, trường Đại học Công nghệ Thông tin, Đại học Quốc gia Thành phố Hồ Chí Minh.
 
 ## Hướng dẫn cài đặt
 - Cài đặt [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
