@@ -109,7 +109,7 @@
 ## Hướng dẫn cài đặt
 - Cài đặt [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
 - Cài đặt [SQL Sever](https://www.microsoft.com/en-us/sql-server/sql-server-downloads). Hướng dẫn cài đặt [tại đây](https://www.youtube.com/watch?v=c9NQLLboSeg).
-- Download phần mềm tại [https://github.com/nhubaole/MusicPlayer](https://github.com/nhubaole/MusicPlayer)
+- Download phần mềm tại [https://github.com/AnhHa03/Music_Playe](https://github.com/AnhHa03/Music_Playe)
   - Clone về với git.
   - Hoặc Download ZIP và giải nén.
 - Tìm file **DB.sql** và mở trong **Microsoft SQL Server Management Studio**. 
