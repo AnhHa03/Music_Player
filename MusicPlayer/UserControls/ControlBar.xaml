@@ -13,7 +13,7 @@
         <vm:ControlBarVM></vm:ControlBarVM>
     </UserControl.DataContext>
     <Grid>
-        <Border Background="{StaticResource PrimaryMid}" CornerRadius="40,40,0,0">
+        <Border Background="{DynamicResource SecondaryHueMidBrush}" CornerRadius="40,40,0,0">
             <Grid>
                 <Button Background="Transparent" 
                         BorderThickness="0" 

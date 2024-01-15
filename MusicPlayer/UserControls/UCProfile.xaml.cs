@@ -33,7 +33,13 @@ namespace MusicPlayer.UserControls
                 txtFullName.Text = current.FULLNAME;
                 txtPhone.Text = current.PHONE;
                 txtEmail.Text = current.EMAIL;
-                dpDOB.SelectedDate = Convert.ToDateTime(current.DOB.ToString().Substring(0, 10));
+                string dobString = current.DOB.ToString().Substring(0, 10);
+                DateTime dob;
+                if (DateTime.TryParse(dobString, out dob))
+                {
+                    dpDOB.SelectedDate = dob;
+                }               
+                //dpDOB.SelectedDate = Convert.ToDateTime(current.DOB.ToString().Substring(0, 10));
                 cmbSex.Text = current.SEX == "Nam" ? "Nam" : "Nữ";
 
             }

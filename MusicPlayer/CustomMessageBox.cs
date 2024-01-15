@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Interop;
 
 namespace MusicPlayer
 {
@@ -11,10 +12,26 @@ namespace MusicPlayer
     {
         public static MessageBoxResult Show(string message, MessageBoxImage image)
         {
-            CustomMessageBoxWindow msg = new CustomMessageBoxWindow(message, image);
-            msg.ShowDialog();
+            MessageBoxResult result = MessageBoxResult.None;
 
+            Application.Current.Dispatcher.BeginInvoke((Action)(() =>
+            {
+                CustomMessageBoxWindow msg = new CustomMessageBoxWindow(message, image);
+                msg.ShowDialog();
+                result = msg.Result;
+            }));
+
+            return result;
+            /*
+
+           CustomMessageBoxWindow msg = new CustomMessageBoxWindow(message, image);
+
+            Application.Current.Dispatcher.Invoke(() =>
+            {              
+                msg.ShowDialog();                
+            });
             return msg.Result;
+            */
         }
     }
 }
