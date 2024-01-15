@@ -107,17 +107,14 @@
 * Thầy **Huỳnh Tuấn Anh**, giảng viên khoa **Công Nghệ Phần Mềm**, trường Đại học Công nghệ Thông tin, Đại học Quốc gia Thành phố Hồ Chí Minh.
 
 ## Hướng dẫn cài đặt
-- Cài đặt [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
-- Cài đặt [SQL Sever](https://www.microsoft.com/en-us/sql-server/sql-server-downloads). Hướng dẫn cài đặt [tại đây](https://www.youtube.com/watch?v=c9NQLLboSeg).
-- Download phần mềm tại [https://github.com/AnhHa03/Music_Playe](https://github.com/AnhHa03/Music_Playe)
-  - Clone về với git.
-  - Hoặc Download ZIP và giải nén.
-- Tìm file **DB.sql** và mở trong **Microsoft SQL Server Management Studio**. 
-- Chọn tất cả nội dung file. Chọn **Execute** để khởi tạo database trên nhánh **master**.
-- Mở file **MusicPlayer.sln**. Nhấn **Ctrl+F5** để chạy.
-- Tài khoản mặc định:
-  - Tên đăng nhập: default
-  - Mật khẩu: 123456
+-	Truy cập https://github.com/AnhHa03/Music_Player và download toàn bộ source về. Sau đó truy cập vào folder Setup -> Debug -> Setup.msi để cài đặt phần mềm.
+-	Tìm file DB.sql và mở trong Microsoft SQL Server Management Studio.
+-	Chọn tất cả nội dung file. Chọn Execute để khởi tạo database trên nhánh master.
+-	Mở file MusicPlayer.sln. Sau đó tìm đến file app.config, nhấn tổ hợp phím CTRL + F để tìm kiếm đến data source, sau đó chỉnh data source = tên name server đã cài đặt trong SQL Server.
+-	Nhấn Ctrl+F5 để chạy.
+-	Tài khoản mặc định:
+•	Tên đăng nhập: default
+•	Mật khẩu: 123456
 
 ## Hướng dẫn sử dụng
  <details>

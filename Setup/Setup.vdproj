@@ -404,6 +404,26 @@
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E6FB5193F7610001B2BACE5B692B0A26"
             {
+            "SourcePath" = "8:..\\..\\..\\..\\Downloads\\Logo.png"
+            "TargetName" = "8:Logo.png"
+            "Tag" = "8:"
+            "Folder" = "8:_F4B226CEF22E4EA0BD33C526B0BDFBCD"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_ED12DA1DC086F6D4690590A7BDC1BADB"
+            {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
@@ -774,9 +794,14 @@
                             "Value" = "3:1"
                             "DefaultValue" = "3:1"
                             "UsePlugInResources" = "11:TRUE"
-                            }
-                        }
-                    }
+                }
+            }
+            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_95C34A2C8E4244CAAAE4FEC739498637"
+            {
+            "UseDynamicProperties" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "SourcePath" = "8:<VsdDialogDir>\\VsdBasicDialogs.wim"
+            }
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_171636F8BF374BF7B0BBB8E1FE87F6ED"
                     {
                     "Sequence" = "3:100"
@@ -822,9 +847,14 @@
                             "Value" = "8:#1203"
                             "DefaultValue" = "8:#1203"
                             "UsePlugInResources" = "11:TRUE"
-                            }
-                        }
-                    }
+                }
+            }
+            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_D0EA3CF4F5304415BC88CEA5EE79BBD9"
+            {
+            "UseDynamicProperties" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "SourcePath" = "8:<VsdDialogDir>\\VsdUserInterface.wim"
+            }
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_83FA899F7FCF47ABBE228295DB5A348B"
                     {
                     "Sequence" = "3:300"
@@ -845,10 +875,22 @@
                             "Setting" = "3:1"
                             "UsePlugInResources" = "11:TRUE"
                             }
+                            "UpdateText"
+                            {
+                            "Name" = "8:UpdateText"
+                            "DisplayName" = "8:#1058"
+                            "Description" = "8:#1158"
+                            "Type" = "3:15"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1258"
+                            "DefaultValue" = "8:#1258"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
                         }
                     }
                 }
-            }
             "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_E18C544CD69E4CE29025D375D487CF9B"
             {
             "UseDynamicProperties" = "11:FALSE"
